@@ -316,7 +316,7 @@
         });
         scanner.addListener('scan', function(content) {
             // $('#input').val(content);
-            window.location = content;
+            window.location = `transaksi_qrcode/${content}`;
         });
         Instascan.Camera.getCameras().then(function(cameras) {
             if (cameras.length > 0) {

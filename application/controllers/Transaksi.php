@@ -99,7 +99,7 @@ class Transaksi extends CI_Controller
             $this->template->load('template', 'transaksi/transaksi_qrcode_form', $data);
         } else {
             echo "<script>alert('data tidak ditemukan');";
-            echo "window.location='" . site_url('transaksi') . "'; 
+            echo "window.location='" . site_url('transaksi/scan') . "'; 
         </script>";
         }
     }

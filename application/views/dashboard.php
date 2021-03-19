@@ -1,7 +1,7 @@
 <h1 class="h3 mb-4 text-gray-800">Dashboard</h1>
 <div class="row">
     <div class="col-12 text-center">
-        <a href="<?= base_url('dashboard/scan') ?>" class="btn btn-outline-dark mb-5 "> <img src="<?= base_url('assets/img/scan.png') ?>" class="" width="30" height="30"> </a>
+        <a href="<?= base_url('transaksi/scan') ?>" class="btn btn-outline-dark mb-5 "> <img src="<?= base_url('assets/img/scan.png') ?>" class="" width="30" height="30"> </a>
     </div>
 </div>
 <!-- Content Row -->

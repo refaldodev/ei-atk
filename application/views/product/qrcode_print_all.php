@@ -15,7 +15,7 @@
     <hr>
     <?php foreach ($row as $data) : ?>
         <?php
-        $qrCode = new Endroid\QrCode\QrCode(base_url('transaksi/transaksi_qrcode/') . $data->barcode);
+        $qrCode = new Endroid\QrCode\QrCode($data->barcode);
         $qrCode->writeFile('uploads/barcode_qrcode/item-' . $data->barcode . '.png');
         ?>
 

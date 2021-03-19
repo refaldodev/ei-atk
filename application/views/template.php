@@ -34,6 +34,7 @@
 
     <!-- daterangepicker -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
 
 </head>
 
@@ -87,23 +88,7 @@
                     </div>
                 </li>
             <?php } ?>
-            <?php if ($this->session->userdata('level') == 1) { ?>
-                <!-- Nav Item - Pages Collapse Menu -->
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        <i class="fas fa-archive"></i>
-                        <span>Caraousel</span>
-                    </a>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                        <div class="bg-white py-2 collapse-inner rounded">
 
-                            <a class="collapse-item" href="<?= site_url('jenis_barang') ?>">Tambah Caraousel</a>
-                            <a class="collapse-item" href="<?= site_url('satuan') ?>">Edit Caraousel</a>
-                            <a class="collapse-item" href="<?= site_url('barang') ?>">Hapus Caraousel</a>
-                        </div>
-                    </div>
-                </li>
-            <?php } ?>
             <!-- Nav Item - Transaction Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">

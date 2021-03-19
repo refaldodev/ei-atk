@@ -11,7 +11,7 @@
 <body>
     <br><br><br>
     <?php
-    $qrCode = new Endroid\QrCode\QrCode(base_url('transaksi/transaksi/') . $row->barcode);
+    $qrCode = new Endroid\QrCode\QrCode($row->barcode);
     $qrCode->writeFile('uploads/barcode_qrcode/item-' . $row->barcode . '.png');
 
     ?>
